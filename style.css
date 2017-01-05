@@ -173,3 +173,9 @@ h4 span:first-child {
 		display: none;
 	}
 }
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}

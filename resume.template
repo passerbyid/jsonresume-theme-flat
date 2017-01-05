@@ -28,8 +28,16 @@
 	<header id="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					{{#resume.basics}}
+				{{#resume.basics}}
+				{{#picture}}
+				<div class="col-sm-3 col-xs-5 vcenter">
+					<img class="media-object img-rounded img-responsive" src="https://{{.}}">
+				</div>
+				{{/picture}}
+				<div class="
+					{{#unless picture}}col-sm-offset-3{{/unless}}
+					col-sm-5 col-xs-6 vcenter
+				">
 					{{#name}}
 					<h1>
 						{{.}}
@@ -40,8 +48,8 @@
 						{{.}}
 					</h2>
 					{{/label}}
-					{{/resume.basics}}
 				</div>
+				{{/resume.basics}}
 			</div>
 		</div>
 	</header>
